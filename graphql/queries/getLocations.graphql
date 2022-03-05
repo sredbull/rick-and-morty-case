@@ -1,0 +1,15 @@
+query getLocations($filter: FilterLocation) {
+  locations(filter: $filter) {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    results {
+      residents {
+        id
+      }
+    }
+  }
+}

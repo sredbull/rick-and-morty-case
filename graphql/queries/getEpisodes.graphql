@@ -1,0 +1,15 @@
+query getEpisodes($filter: FilterEpisode) {
+  episodes(filter: $filter) {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    results {
+      characters {
+        id
+      }
+    }
+  }
+}
